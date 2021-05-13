@@ -12,7 +12,7 @@ from numpy.linalg import norm
 def concate_wav(wav_pair , seg_len , overlap ,rate=8000 ):
     
     if len(wav_pair) == 1:
-        return wav_pair
+        return wav_pair[0]
     
     overlap = int(overlap * rate)  
     
